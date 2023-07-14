@@ -6,11 +6,48 @@
 h1 {
     color: #E85A4F;
     letter-spacing: 2px;
+    text-align: center;
+    font-size: 500%;
 }
 h2 {
     color: #E98074;
+    padding: 2em 2em;
 }
 p {
-    letter-spacing: .75px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
     
 }
+.project-buttons {
+    display: flex;
+    justify-content: center;
+}
+.site-info {
+    display: flex;
+    justify-content: center;
+}
+.nav-menu {
+    text-align: center;
+    width: 90%;
+    font-size: 200%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #8E8D8A;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    border: 2px solid #E85A4F;
+    
+    
+
+}
+.link-nav {
+    background-color: #8E8D8A;
+    color: #EAE7DC;
+    text-decoration: none;
+}
+
