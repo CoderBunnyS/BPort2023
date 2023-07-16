@@ -12,6 +12,8 @@ h1 {
 h2 {
     color: #E98074;
     padding: 2em 2em;
+    display: flex;
+    justify-content: center;
 }
 p {
     letter-spacing: 1px;
