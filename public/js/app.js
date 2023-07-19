@@ -16,8 +16,31 @@ const configureClient = async () => {
     });
   };
 
+
+
   // ..
 
 window.onload = async () => {
     await configureClient();
-  }
+  
+    // NEW - update the UI state
+    updateUI();
+
+    
+  };
+  
+  // NEW
+  const updateUI = async () => {
+    const isAuthenticated = await auth0Client.isAuthenticated();
+  
+    document.getElementById("btn-logout").disabled = !isAuthenticated;
+    document.getElementById("btn-login").disabled = isAuthenticated;
+  };
+
+  const login = async () => {
+    await auth0Client.loginWithRedirect({
+      authorizationParams: {
+        redirect_uri: window.location.origin
+      }
+    });
+  };
