@@ -27,6 +27,15 @@ p {
 .project-buttons {
     display: flex;
     justify-content: center;
+    
+}
+.buttons {
+    background-color: #E85A4F;
+    color: #EAE7DC;
+    font-size: 2em;
+    padding: 0 10%;
+    margin: 5% 20%;
+    
 }
 .site-info {
     display: flex;
