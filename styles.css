@@ -33,9 +33,12 @@ p {
     background-color: #E85A4F;
     color: #EAE7DC;
     font-size: 2em;
-    padding: 0 10%;
-    margin: 5% 20%;
-    
+    padding: 0 2em;
+    margin: 5% 1em;
+    width: 6em;
+    height: 5em;
+    justify-content: center;
+
 }
 .site-info {
     display: flex;
