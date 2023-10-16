@@ -3,6 +3,10 @@
     color: #8E8D8A;
     font-family: 'Agdasima', sans-serif;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 h1 {
     color: #E85A4F;
     letter-spacing: 2px;
@@ -46,7 +50,7 @@ p {
 }
 .nav-menu {
     text-align: center;
-    width: 90%;
+    width: 100%;
     font-size: 200%;
     display: flex;
     justify-content: space-around;
