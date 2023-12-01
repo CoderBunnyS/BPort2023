@@ -33,6 +33,14 @@ p {
     justify-content: center;
     
 }
+
+@media screen and (max-width: 750px) {
+    .project-buttons {
+        display: inline;
+
+
+    }
+}
 .buttons {
     background-color: #E85A4F;
     color: #EAE7DC;
@@ -44,6 +52,8 @@ p {
     justify-content: center;
 
 }
+
+
 .site-info {
     display: flex;
     justify-content: center;padding: 25px;
