@@ -70,14 +70,18 @@ body {
 width: 100%;
   background-color: #4dad9c;
 }
+.sanSerif {
+  font-family: "Arimo", sans-serif;
+  font-size: small;
+}
 .headshot {
-    width: fit-content;
-    margin-left: 0%;
+    width:45%;
+    height: 80%;
 
 
   }
 .colorBox {
-    background-color: #071218;
+    background-color: #7C848C;
 
     width: 100%;
     flex-direction: column;
@@ -86,10 +90,10 @@ width: 100%;
 }
 .description {
     padding: 2em;
-    font-family: "Arimo", sans-serif;
+    font-family: "ibm plex serif", serif;
     font-size: 1.5em;
     color: #eae7dc;
-    
+    width: 100%;
     text-align: center;
 }
 .project-buttons {
