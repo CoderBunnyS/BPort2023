@@ -5,9 +5,9 @@ body {
 }
 #myVideo {
   width: 100%;
-  height: 100%;
+  height: 20%; /* Adjust the height value to make the video shorter */
   z-index: -1;
-  object-fit: cover;
+  object-fit: scale-down;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,16 +15,17 @@ body {
 .heading {
   z-index: 1;
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "IBM Plex Serif", serif;
+  
   text-shadow: 2px 2px 0 #071218;
 }
 .subheading {
   z-index: 1;
   position: absolute;
-  top: 45%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -35,7 +36,7 @@ body {
 .pronouns {
   z-index: 1;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -51,15 +52,13 @@ body {
 .intro-text {
   z-index: 2;
   font-family: "Arimo", sans-serif;
+  font-size: xx-large;
+  margin-top: -15%;
 }
 .about {
   display: flex;
   justify-content: center;
-
-
   font-family: "Arimo", sans-serif;
-
-
   text-align: center;
 }
 .boxes {
@@ -67,34 +66,38 @@ body {
   flex-direction: column;
   align-items: center;
 
-width: 100%;
+  width: 100%;
   background-color: #4dad9c;
 }
 .sanSerif {
   font-family: "Arimo", sans-serif;
-  font-size: small;
+  font-size: 30%;
+  position: absolute;
+  top: 113%;
+  left: 45%;
+  color: #071218;
 }
+
 .headshot {
-    width:45%;
-    height: 80%;
-
-
-  }
+  width: 45%;
+  height: 80%;
+}
 .colorBox {
-    background-color: #7C848C;
+  background-color: #7c848c;
 
-    width: 100%;
-    flex-direction: column;
+  width: 100%;
+  flex-direction: column;
   height: 20%;
   justify-content: end;
 }
 .description {
-    padding: 2em;
-    font-family: "ibm plex serif", serif;
-    font-size: 1.5em;
-    color: #eae7dc;
-    width: 100%;
-    text-align: center;
+  padding: 2em;
+  font-family: "ibm plex serif", serif;
+  font-size: 3.5em;
+  color: #071218;
+  width: 100%;
+  text-align: left;
+  margin-left: 40%;
 }
 .project-buttons {
   display: flex;
@@ -149,7 +152,6 @@ width: 100%;
 #idea {
   padding-right: 60%;
 }
-
 
 @media screen and (max-width: 750px) {
   .headshot {
