@@ -1,0 +1,43 @@
+.intro {
+  position: relative;
+  width: 100%;
+  height: calc(6/7 * 100vh);
+  overflow: hidden;
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #B9BCBE;
+  z-index: 1;
+}
+
+.heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: "IBM Plex Serif", serif;
+  text-shadow: 2px 2px 0 #071218;
+}
+
+.subheading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Arimo", sans-serif;
+  text-shadow: 2px 2px 0 #071218;
+}
+
+.pronouns {
+  font-size: 1.5rem;
+}
+
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
