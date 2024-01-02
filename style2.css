@@ -17,14 +17,14 @@
 
 .heading {
   font-size: 3rem;
-  margin-bottom: 1rem;
+
   font-family: "IBM Plex Serif", serif;
   text-shadow: 2px 2px 0 #071218;
 }
 
 .subheading {
   font-size: 2rem;
-  margin-bottom: 1rem;
+
   font-family: "Arimo", sans-serif;
   text-shadow: 2px 2px 0 #071218;
 }
@@ -40,4 +40,123 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.about {
+  display: flex;
+  height: 66vh;
+  width: 100%;
+}
+
+.headshot {
+  width: 25%;
+  height: 100%;
+  .intro {
+    position: relative;
+    width: 100%;
+    height: calc(6/7 * 100vh);
+    overflow: hidden;
+    background-color: #071218; /* Set the background color to match the photo's background */
+  }
+
+  .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #B9BCBE;
+    z-index: 1;
+  }
+
+  .heading {
+    font-size: 3rem;
+    font-family: "IBM Plex Serif", serif;
+    text-shadow: 2px 2px 0 #071218;
+  }
+
+  .subheading {
+    font-size: 2rem;
+    font-family: "Arimo", sans-serif;
+    text-shadow: 2px 2px 0 #071218;
+  }
+
+  .pronouns {
+    font-size: 1.5rem;
+  }
+
+  #myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about {
+    display: flex;
+    height: 66vh;
+    width: 100%;
+  }
+
+  .headshot {
+    width: 25%;
+    height: 100%;
+  }
+}
+
+.boxes {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.colorBox {
+  background-color: #071218;
+  height: 25%;
+  width: 100%;
+}
+
+.description {
+  flex-grow: 1;
+  padding: 5rem;
+  background-color: #4DAD9C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: .5rem;
+}
+.sanSerif {
+  margin-left: -40%;
+  margin-top: -15%;
+  font-family: "Arimo", sans-serif;
+  font-size: 1rem;
+}
+
+.serif {
+  margin-top: 5%;
+  margin-left: -25%;
+  font-size: 3rem;
+}
+
+.experience {
+  display: flex;
+}
+
+.eduHeading {
+  flex-grow: 1;
+  width: 50%;
+  transform: translate(10%, 20%);
+  font-size: 40px;
+}
+
+.nav-menu {
+  flex: 1;
+}
+
+.resumeYear {
+  font-size: 14px;
+  font-family: "Arimo", sans-serif;
+  font-style: italic;
 }
