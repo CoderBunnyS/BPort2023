@@ -1,107 +1,147 @@
-* {
-    background-color: #EAE7DC;
-    color: #8E8D8A;
-    font-family: 'Agdasima', sans-serif;
-}
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-h1 {
-    color: #E85A4F;
-    letter-spacing: 2px;
-    text-align: center;
-    font-size: 500%;
-}
-h2 {
-    color: #E85A4F;
-    /* padding: 2em 2em; */
-    display: flex;
-    justify-content: center;
-    font-size: 400%;
-}
+/* Reset some default styles */
+body,
+h1,
+h2,
 p {
-    letter-spacing: 1px;
-    font-size: 25px;
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    
-}
-.project-buttons {
-    display: flex;
-    justify-content: center;
-    
+  margin: 0;
+  padding: 0;
 }
 
-@media screen and (max-width: 750px) {
-    .project-buttons {
-        display: inline;
+/* Style header and navigation */
+header {
+  background-color: #8e5f8a;
+  color: #fff;
 
-
-    }
-}
-.buttons {
-    background-color: #E85A4F;
-    color: #EAE7DC;
-    font-size: 2em;
-    padding: 0 2em;
-    margin: 5% 1em;
-    width: 6em;
-    height: 5em;
-    justify-content: center;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-
-.site-info {
-    display: flex;
-    justify-content: center;padding: 25px;
-}
-.nav-menu {
-    text-align: center;
-    width: 100%;
-    font-size: 200%;
-    display: flex;
-    justify-content: space-around;
-    letter-spacing: .1rem;
-    background-color: #8E8D8A;
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration: none;
-
-    
-    
-
-}
-@media screen and (max-width: 750px) {
-    .nav-menu {
-        display: inline-grid;
-        padding: 10px;
-
-
-    }
-}
-.link-nav {
-    background-color: #8E8D8A;
-    color: #EAE7DC;
-    text-decoration: none;
-}
-#idea {
-    padding-right: 60%;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  margin-right: -50%;
 }
 
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+}
+.name-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Move to the far left */
+}
+
+.name {
+  font-size: 3em;
+  margin-left: -100%;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+}
+.name {
+  font-size: 3em; /* Adjust this value to your liking */
+}
+
+/* Style sections */
+.section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Style the about section header with flexbox */
+.about-header {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  padding: 30px 0;
+  
+}
+
+.about-header img {
+  max-width: 250px; /* Adjust the size as needed */
+  border-radius: 50%; /* Creates a circular shape for the headshot */
+  margin-left: -5%;
+}
+
+/* Style the about content */
 .headshot {
-    width: 40%;
-    padding-right: 5%;
+    margin-right: 5%;
 }
-@media screen and (max-width: 750px) {
-    .headshot {
-        display: none;
-        opacity: 0;
-    }
+.aboutMe {
+    margin-bottom: 5%;
+    margin-left: 25%;
+}
+.aboutMePara {
+    margin-left: 15%;
+    width: 100%;
+}
+.about-content {
+  flex: 1; /* Takes up the remaining space */
 }
 
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+}
 
+.project-grid a {
+    text-decoration: none; /* Remove underline */
+    color: #8e5f8a; /* Set a different color */
+}
 
+.projectTitles {
+    margin-top: 10%;
+    
+}
+
+/* Style each project in the grid */
+.project {
+  border: 1px solid #ddd;
+  padding: 15%;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.project img {
+  max-width: 100%;
+  height: 25%;
+  border: 1px solid #8e5f8a;
+}
+
+/* Style the contact icons */
+.contact-icon {
+  width: 50px; /* Adjust the size as needed */
+  margin: 10px; /* Add spacing between icons */
+  margin-top: -50%;
+}
+
+/* Style footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
