@@ -91,6 +91,7 @@ nav a {
 .aboutMe {
     margin-bottom: 5%;
     margin-left: 25%;
+    color: #8e5f8a;
 }
 .aboutMePara {
     margin-left: 15%;
@@ -109,12 +110,12 @@ nav a {
 
 .project-grid a {
     text-decoration: none; /* Remove underline */
-    color: #8e5f8a; /* Set a different color */
+    color: black; 
 }
 
 .projectTitles {
     margin-top: 10%;
-    
+    color: #8e5f8a;
 }
 
 /* Style each project in the grid */
