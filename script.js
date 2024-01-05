@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', function() {
-  alert('Welcome to My Portfolio!');
+  alert(`Welcome to Bunny's Portfolio!`);
 });
