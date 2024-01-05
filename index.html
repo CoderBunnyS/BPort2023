@@ -1,157 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bunny Schaefer</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="/css/main.css" />
-  </head>
-  <body>
-    <div>
-      <h1 class="heading">Bunny Schaefer</h1>
-      <nav role="navigation" class="nav-menu">
-        <!-- <a href="/index.html" aria-current="page" class="link-nav">Home</a> -->
-        <!-- <a href="/about" class="link-nav">About</a> -->
-        <a
-          href="https://www.linkedin.com/in/bunnyschaefer/"
-          target="_blank"
-          class="link-nav"
-          >Find me on Linkedin</a
-        >
-        <a
-          href="https://github.com/CoderBunnyS"
-          target="_blank"
-          class="link-nav"
-          >Check out my Github</a
-        >
-        <a
-          href="https://docs.google.com/document/d/1UUHL5pqMfPNtgrBQ6antnfWcsQdGq1V3A_CrYYsfNvE/edit?usp=sharing"
-          target="_blank"
-          class="link-nav"
-          >Peruse my Resume</a
-        >
-        <a
-          href="mailto:schaeferbunny@gmail.com"
-          target="_blank"
-          class="link-nav"
-          >Email Me</a
-        >
-      </nav>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunny Schaefer's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="name-container">
+                <div class="name">Bunny Schaefer</div>
+            </div>
+            <ul>
+                <li> <a href="mailto:schaeferbunny@gmail.com" target="_blank">
+                    <img src="./assets/email.svg" alt="Email" class="contact-icon">
+                </a></li>
+                <li> <a href="tel:+12063551182" target="_blank">
+                    <img src="./assets/phone.svg" alt="Phone" class="contact-icon">
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/bunnyschaefer/" target="_blank">
+                    <img src="./assets/LinkedIn.svg" alt="LinkedIn" class="contact-icon">
+                </a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="site-info">
-      <img
-        src="./assets/BunnyPic.jpg"
-        alt="Bunny's headshot"
-        class="headshot"
-      />
-      <p>
-        <br /><br />I'm Bunny, a Solutions Engineer who specializes in building
-        strong client relationships. I use my communication skills and technical
-        expertise to contribute effectively to any technical team I'm part of.
-        Collaboration is my forte, and I aim to create an environment where
-        everyone's voice is valued. <br /><br />
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-header">
+                <img class="headshot" src="./assets/BunnyPic.png" alt="Your Headshot">
+                <div class="about-content">
+                    <h1 class="aboutMe">About Me</h1>
+                    <p class="aboutMePara">Hello! I’m Bunny, a seasoned Solutions Engineer and Full Stack Web Developer with a deep passion for problem-solving and building robust web solutions. My journey in tech has been driven by a commitment to helping customers navigate complex challenges, always aiming to turn their problems into opportunities. I thrive on fostering strong, collaborative relationships both with my clients and team members, believing firmly that a positive, fun-filled work environment is key to unlocking our greatest potential.<br><br>
 
-        Helping others and making a positive impact is my passion. People often
-        come to me for advice, to share their thoughts, or just to chat over
-        coffee. In every conversation, I make sure to encourage open and
-        respectful discussions. <br /><br />
+                        My approach is rooted in the belief that work should not only be about delivering results but also about enjoying the process. I excel in translating technical jargon into simple, understandable terms, ensuring that even those with limited technical background can grasp complex concepts. This skill has been invaluable in creating a bridge between technical and non-technical stakeholders, fostering a more inclusive and productive dialogue.<br><br>
+                        
+                        At the heart of my work ethic is a promise to under-promise and over-deliver. This philosophy has guided me throughout my career, allowing me to exceed expectations consistently while maintaining trust and integrity in all my professional relationships. I bring this energy, expertise, and ethos to every project I undertake, ensuring that I deliver not just solutions, but also a delightful and engaging experience for everyone involved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        I'm an optimist at heart and bring positivity to both my work and
-        personal life. Building trust with colleagues and clients is something I
-        take pride in, as I believe trust is key to our collective success.<br /><br />
 
-        I'm excited about the opportunity to bring my problem-solving skills and
-        collaborative spirit to your team. Together, we can achieve great things
-        and make a positive difference in the world!
-      </p>
+<section id="projects" class="section">
+    <div class="container">
+        <h1>My Projects</h1>
+        <div class="project-grid">
+            <a href="https://bunnysblog.onrender.com/" class="project" target="_blank">
+                <div>
+                    <img src="./assets/project1.png" alt="Project 1">
+                    <h2 class="projectTitles">Project 1</h2>
+                    <br>
+                    <br>
+                    <p>Presenting 'Activity Generator', a unique web application crafted during the COVID lockdown, designed to invigorate the daily lives of those at home seeking new and engaging activities. Built with HTML, CSS, and JavaScript, it features an intuitive system that utilizes API calls to suggest a variety of activities, perfectly suited for individuals looking to break the monotony of lockdown life. This project not only showcases my skills in creating responsive and user-friendly web applications but also reflects my ability to empathize with user needs during challenging times. 'Activity Generator' stands as a testament to my commitment to developing solutions that are both innovative and practical, offering users a simple yet effective way to find enjoyable activities.
+                    </p>
+                </div>
+            </a>
+            <a href="https://cocktailparty.netlify.app/" class="project" target="_blank">
+                <div>
+                    <img src="./assets/project2.png" alt="Project 2">
+                    <h2 class="projectTitles">Project 2</h2>
+                    <br>
+                    <br>
+                    <p>Discover 'Activity Generator,' a web application I developed during the COVID lockdown to offer a spark of inspiration for those confined at home and searching for something new to do. This project, intricately built using HTML, CSS, and JavaScript, stands out for its unique functionality of suggesting diverse activities through API calls, specifically designed for users battling boredom during the pandemic. The 'Activity Generator' is a reflection of my front-end development expertise and my keen understanding of user needs during unprecedented times. Its interface is both straightforward and engaging, ensuring users can effortlessly find enjoyable and unique activities. This application exemplifies how technology can be harnessed to provide practical, timely solutions while maintaining an elegant and user-friendly design.</p>
+                </div>
+            </a>
+            <a href="https://cocktailparty.netlify.app/" class="project" target="_blank">
+                <div>
+                    <img src="./assets/project3.png" alt="Project 3">
+                    <h2 class="projectTitles">Project 3</h2>
+                    <br>
+                    <br>
+                    <p>Introducing 'Cocktail Disco', a vibrant and interactive React-based web application designed for cocktail enthusiasts. This engaging platform features a user-friendly search bar, allowing users to discover a wide array of cocktail recipes with ease. Each search initiates an API call, fetching curated cocktail suggestions tailored to the user's preferences. What sets 'Cocktail Disco' apart is its smart functionality to remember and display the user’s last three searches, enhancing the experience by keeping track of their recent explorations. This project is a perfect blend of my technical prowess in React development and my innovative approach to enhancing user engagement. 'Cocktail Disco' is not just an app; it's an experience, inviting users to explore the exciting world of cocktails in a fun, interactive way, while showcasing my commitment to creating intuitive and responsive web applications.</p>
+                </div>
+            </a>
+            <a href="https://movie-app-mu-orpin.vercel.app/" class="project" target="_blank">
+                <div>
+                    <img src="./assets/project4.png" alt="Project 4">
+                    <h2 class="projectTitles">Project 4</h2>
+                    <br>
+                    <br>
+                    <p>Explore 'What to Watch', a bespoke React application designed to revolutionize the way users choose movies and TV shows. This intuitive app allows users to effortlessly search by name or keywords, offering them the flexibility to filter results based on their preference for movies, television series, or even specific episodes. Each search initiates a sophisticated API call, delivering a curated selection of viewing suggestions that cater to the user's unique tastes. 'What to Watch' stands out for its user-centric design and seamless functionality, showcasing my expertise in creating dynamic React applications. This project is more than just a tool; it's an interactive guide, assisting users in navigating the vast world of entertainment with ease and precision, while demonstrating my commitment to building responsive, user-friendly, and innovative web solutions.</p>
+                </div>
+            </a>
+        </div>
+        </div>
     </div>
-    <div>
-      <h2>Projects</h2>
-    </div>
-    <div class="site-info">
-      <p>
-        These projects cover HTML, CSS, JavaScript, and React, highlighting my
-        skills in web development. You'll find a range of projects, from
-        websites to web applications. Feel free to explore my work and see my
-        dedication to coding in action. Whether you're interested in front-end
-        design or full-stack development, you'll find a variety of projects that
-        reflect my passion for coding.
-      </p>
-    </div>
+</section>
 
-    <div>
+<footer>
+    <p>&copy; 2024 Bunny Schaefer</p>
+</footer>
 
-    <div class="project-buttons">
-        <div><a href="https://bunnysblog.onrender.com/" target="_blank"
-          ><button
-            class="buttons"
-            href="https://bunnysblog.onrender.com/"
-            target="_blank"
-            id="idea"
-          >
-            Full Stack MERN Blog
-          </button></a
-        >
-      </div>
-        <br />
-        <br />
-        <div>
-        <a href="https://activitygenerator.vercel.app/" target="_blank"
-          ><button
-            class="buttons"
-            href="https://activitygenerator.vercel.app/"
-            target="_blank"
-            id="idea"
-          >
-            Activity Idea Generator
-          </button></a
-        >
-      </div>
-        <br>
-        <br />
-        <div>
-        <a href="https://cocktailparty.netlify.app/" target="_blank"
-          ><button
-            class="buttons"
-            href="https://cocktailparty.netlify.app/"
-            target="_blank"
-          >
-            Cocktail Party Recipes
-          </button></a
-        >
-      </div>
-        <br>
-        <br />
-        <div>
-        <a href="https://harvard-project.vercel.app/" target="_blank"
-          ><button
-            class="buttons"
-            href="https://harvard-project.vercel.app/"
-            target="_blank"
-          >
-            Harvard Art Museum
-          </button></a
-        >
-      </div>
-      </div>
-    </div>
-
-    </div>
-    <div>
-      <h2>Thanks for visiting!</h2>
-    </div>
-    <div class="links"> 
-      <!-- <a href="/image-license-image" target="_blank" class="footer-links">Image License Info</a> -->
-    </div>
-    <!-- <script src="/javascript.js" type="text/javascript"></script> -->
-    <script src="/public/js/app.js" type="text/javascript"></script>
-  </body>
+<script src="script.js"></script>
+</body>
 </html>
