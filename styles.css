@@ -1,195 +1,147 @@
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
 }
-#myVideo {
-  width: 100%;
-  height: 20%; /* Adjust the height value to make the video shorter */
-  z-index: -1;
-  object-fit: scale-down;
+
+/* Style header and navigation */
+header {
+  background-color: #8e5f8a;
+  color: #fff;
+
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.heading {
-  z-index: 1;
-  position: static;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "IBM Plex Serif", serif;
-  text-shadow: 2px 2px 0 #071218;
-}
-.subheading {
-  z-index: 1;
-  position: absolute;
-  top: 28%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  font-family: "Arimo", sans-serif;
-  text-shadow: 2px 2px 0 #071218;
-}
-.pronouns {
-  z-index: 1;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  font-family: "Arimo", sans-serif;
-  text-shadow: 2px 2px 0 #071218;
-}
-.intro {
-  color: #cbcccd;
-  letter-spacing: 2px;
-  text-align: center;
-}
-.intro-text {
-  z-index: 2;
-  font-family: "Arimo", sans-serif;
-  font-size: xx-large;
-  margin-top: -15%;
-}
-.about {
-  display: flex;
-  justify-content: center;
-  font-family: "Arimo", sans-serif;
-  text-align: center;
-}
-.boxes {
-  display: flex;
   flex-direction: column;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  margin-right: -50%;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-
-  width: 100%;
-  background-color: #4dad9c;
+  height: 30vh;
 }
-.sanSerif {
-  font-family: "Arimo", sans-serif;
-  font-size: 30%;
-
-  top: 140%;
-  left: 45%;
-  color: #071218;
+.name-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Move to the far left */
 }
 
+.name {
+  font-size: 3em;
+  margin-left: -100%;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+}
+.name {
+  font-size: 3em; /* Adjust this value to your liking */
+}
+
+/* Style sections */
+.section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Style the about section header with flexbox */
+.about-header {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  padding: 30px 0;
+  
+}
+
+.about-header img {
+  max-width: 250px; /* Adjust the size as needed */
+  border-radius: 50%; /* Creates a circular shape for the headshot */
+  margin-left: -5%;
+}
+
+/* Style the about content */
 .headshot {
-  width: 45%;
-  height: 80%;
+    margin-right: 5%;
 }
-.colorBox {
-  background-color: #7c848c;
-
-  width: 100%;
-  flex-direction: column;
-  height: 20%;
-  justify-content: end;
+.aboutMe {
+    margin-bottom: 5%;
+    margin-left: 25%;
 }
-.description {
-  padding: 2em;
-  font-family: "ibm plex serif", serif;
-  font-size: 3.5em;
-  color: #071218;
-  width: 100%;
-  text-align: left;
-  margin-left: 40%;
+.aboutMePara {
+    margin-left: 15%;
+    width: 100%;
 }
-.eduHeading {
-  font-family: "ibm plex serif", serif;
-  font-size: 1.5em;
-  color: #071218;
-  width: 50%;
-  text-align: left;
-  border: #e85a4f solid 1px;
-  margin-left: 0;
+.about-content {
+  flex: 1; /* Takes up the remaining space */
 }
 
-.resumeFormat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  /* Add your resume format styles here */
-}
-.experience {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1vw;
-  height: .5vw;
-  background-color: #B9BCBE;
-  margin-bottom: 20px; /* Add margin-bottom for space */
-
-}
-.experience {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1vw;
-  height: .5vw;
-  background-color: #B9BCBE;
-}
-.project-buttons {
-  display: flex;
-  justify-content: center;
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
 }
 
-@media screen and (max-width: 750px) {
-  .project-buttons {
-    display: inline;
-  }
-}
-.buttons {
-  background-color: #e85a4f;
-  color: #eae7dc;
-  font-size: 2em;
-  padding: 0 2em;
-  margin: 5% 1em;
-  width: 6em;
-  height: 5em;
-  justify-content: center;
+.project-grid a {
+    text-decoration: none; /* Remove underline */
+    color: #8e5f8a; /* Set a different color */
 }
 
-.site-info {
-  display: flex;
-  justify-content: center;
-  padding: 25px;
+.projectTitles {
+    margin-top: 10%;
+    
 }
-.nav-menu {
+
+/* Style each project in the grid */
+.project {
+  border: 1px solid #ddd;
+  padding: 15%;
   text-align: center;
-  width: 100%;
-  font-size: 200%;
-  display: flex;
-  justify-content: space-around;
-  letter-spacing: 0.1rem;
-  background-color: #8e8d8a;
-  padding: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  text-decoration: none;
-}
-@media screen and (max-width: 750px) {
-  .nav-menu {
-    display: inline-grid;
-    padding: 10px;
-  }
-}
-.link-nav {
-  background-color: #8e8d8a;
-  color: #eae7dc;
-  text-decoration: none;
-}
-#idea {
-  padding-right: 60%;
+  padding-top: 5%;
 }
 
-@media screen and (max-width: 750px) {
-  .headshot {
-    display: none;
-    opacity: 0;
-  }
+.project img {
+  max-width: 100%;
+  height: 25%;
+  border: 1px solid #8e5f8a;
+}
+
+/* Style the contact icons */
+.contact-icon {
+  width: 50px; /* Adjust the size as needed */
+  margin: 10px; /* Add spacing between icons */
+  margin-top: -50%;
+}
+
+/* Style footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
