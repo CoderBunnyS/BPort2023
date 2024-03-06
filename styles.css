@@ -11,18 +11,19 @@ p {
 header {
   background-color: #8e5f8a;
   color: #fff;
-
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow-x: visible;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: right;
-  margin-right: -50%;
+  margin-right: -50vw;
 }
 
 nav li {
@@ -146,3 +147,6 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+
+/* Add a media query for responsiveness */
+
