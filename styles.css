@@ -150,3 +150,26 @@ footer {
 
 /* Add a media query for responsiveness */
 
+@media (max-width: 1000px) {
+  body,
+  h1,
+  h2,
+  p,
+  .name,
+  nav ul,
+  header,
+  .navbar,
+  .section,
+  .container,
+  .about-header,
+  .about-content,
+  .project-grid,
+  .project,
+  .contact-icon,
+  footer {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+}
