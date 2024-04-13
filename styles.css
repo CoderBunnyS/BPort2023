@@ -1,6 +1,4 @@
-* {
-  overflow-x: hidden;
-}
+
 
 /* Reset some default styles */
 body,
@@ -9,6 +7,7 @@ h2,
 p {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 /* Style header and navigation */
@@ -16,11 +15,12 @@ header {
   background-color: #8e5f8a;
   color: #fff;
   width: 100vw;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow-x: visible;
+  overflow-x: hidden;
 }
 
 nav ul {
@@ -150,6 +150,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
+  overflow-x: hidden;
 }
 
 /* Add a media query for responsiveness */
@@ -161,8 +162,6 @@ footer {
   p,
   .name,
   nav ul,
-  header,
-  .navbar,
   .section,
   .container,
   .about-header,
@@ -170,10 +169,54 @@ footer {
   .project-grid,
   .project,
   .contact-icon,
+  .aboutMePara,
+  .aboutMe,
   footer {
     display: block;
     margin: auto auto;
     text-align: center;
-    
+    overflow-x: hidden;
+    height: fit-content;
   }
 }
+@media (max-width: 1000px) {
+  header,
+  .navbar {
+    display: block;
+    margin: auto auto;
+    text-align: center;
+    height: fit-content;
+    width: 100vw;
+  }
+}
+@media (max-width: 1000px) {
+  header,
+  li {
+    display: block;
+    margin: auto auto;
+    text-align: center;
+    height: fit-content;
+    padding: 5%;
+  }
+}
+@media (max-width: 1000px) {
+  footer {
+    display: block;
+    margin: auto auto;
+    text-align: center;
+    height: fit-content;
+    padding: 5%;
+    width: 100vw;
+  }
+}
+
+  @media (max-width: 1000px) {
+    .about-header,
+    .headshot
+    img {
+      display: block;
+      margin: auto;
+      height: fit-content;
+      margin-bottom: 25px;
+    }
+  }
