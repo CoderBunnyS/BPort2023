@@ -143,6 +143,9 @@ nav a {
   margin: 10px; /* Add spacing between icons */
   margin-top: -50%;
 }
+.rightIcon {
+    margin-left: 50%;
+}
 
 /* Style footer */
 footer {
