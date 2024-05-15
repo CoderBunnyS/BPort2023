@@ -136,7 +136,7 @@ nav a {
   width: 50px; /* Adjust the size as needed */
 }
 .rightIcon {
-  margin-right: 20%;
+  margin-right: 50%;
 }
 
 /* Style footer */
@@ -150,14 +150,14 @@ footer {
 
 /* Add a media query for responsiveness */
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   /* Hide elements on smaller screens */
   body,
   h1,
   h2,
   p,
   .name,
-  nav ul,
+
   .section,
   .container,
   .about-header,
@@ -176,7 +176,7 @@ footer {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   /* Adjust header and navbar on smaller screens */
   header,
   .navbar {
@@ -188,7 +188,7 @@ footer {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   /* Adjust header and list items on smaller screens */
   header,
   li {
@@ -200,7 +200,7 @@ footer {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   /* Adjust footer on smaller screens */
   footer {
     display: block;
@@ -212,7 +212,7 @@ footer {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   /* Adjust about header and headshot image on smaller screens */
   .about-header,
   .headshot img {
@@ -223,7 +223,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
   /* Adjust project on smaller screens */
   .project {
     display: block;
@@ -234,7 +234,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
   /* Adjust aboutMe on smaller screens */
   .aboutMe {
     display: block;
@@ -244,7 +244,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
   /* Adjust projectTitles on smaller screens */
   .projectTitles {
     display: block;
@@ -253,11 +253,30 @@ footer {
     margin-top: 5%;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
   /* Adjust projectTitles on smaller screens */
   .rightIcon {
 
     margin-right: 0%;
+  }
+  
+}
+@media screen and (max-width: 1000px) {
+  /* Adjust projectTitles on smaller screens */
+  .contact-icon {
+    margin: 0% auto;
+    padding: 0% auto;
+  }
+  
+}
+@media screen and (max-width: 1000px) {
+  /* Adjust projectTitles on smaller screens */
+  nav ul {
+    display: flex;
+    margin: auto auto;
+    height: fit-content;
+    margin-top: 5%;
+    justify-content: center;
   }
   
 }
