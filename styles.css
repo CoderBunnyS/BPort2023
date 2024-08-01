@@ -139,7 +139,6 @@ nav a {
   margin-right: 50%;
 }
 
-
 /* Style footer */
 footer {
   background-color: #333;
@@ -158,7 +157,6 @@ footer {
   h2,
   p,
   .name,
-
   .section,
   .container,
   .about-header,
@@ -254,22 +252,22 @@ footer {
     margin-top: 5%;
   }
 }
+
 @media screen and (max-width: 1000px) {
   /* Adjust projectTitles on smaller screens */
   .rightIcon {
-
     margin-right: 0%;
   }
-  
 }
+
 @media screen and (max-width: 1000px) {
   /* Adjust projectTitles on smaller screens */
   .contact-icon {
     margin: 0% auto;
     padding: 0% auto;
   }
-  
 }
+
 @media screen and (max-width: 1000px) {
   /* Adjust projectTitles on smaller screens */
   nav ul {
@@ -279,5 +277,78 @@ footer {
     margin-top: 5%;
     justify-content: center;
   }
-  
+}
+
+/* Carousel Styles */
+.carousel {
+  position: relative;
+  max-width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 300%; /* 3 images shown at a time */
+}
+
+.carousel-item {
+  flex: 0 0 33.33%; /* Each image takes 1/3rd of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #FF69B4;
+  border-radius: 10px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #FFF;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+/* Neon Button */
+.neon-button {
+  background-color: #FF69B4;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #FF69B4;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 40px #FF69B4;
 }
